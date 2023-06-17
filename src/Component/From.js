@@ -23,13 +23,12 @@ function handleSubmit(e){
   }
 }
   return (
-    <div>
-      <pre>{(flag)?<h2>Hello {inputData.name}, you've  registered successfully</h2>:""}</pre>
+    <div  className='container text-center'>
+      <pre>{(flag)?<h2 className='smsg'>Hello {inputData.name}, you've  registered successfully</h2>:""}</pre>
       <form className='container' onSubmit={handleSubmit}>
-        <div className='header'>
-            <h1>Registration From</h1>
-        </div>
-        <div>
+        <div className='fromui'>
+        <h3 className='text-center'>Registration From</h3>
+        <div >
             <input type='text' placeholder='Enter your Name' name='name' value={inputData.name} 
             onChange={handleData}></input>
         </div>
@@ -40,7 +39,8 @@ function handleSubmit(e){
             <input type='password' placeholder='Enter your Password' name='password' value={inputData.password} onChange={handleData}></input>
         </div>
         <div>
-            <button type='submit'>Submit</button>
+          </div>
+            <button className='sbtn' type='submit'>Submit</button>
         </div>
       </form>
     </div>
