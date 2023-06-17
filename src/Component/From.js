@@ -14,7 +14,7 @@ export default function From() {
 }
 function handleSubmit(e){
   e.preventDefault();
-  if(!inputData.name || !inputData.email || inputData.password)
+  if(!inputData.name || !inputData.email || !inputData.password)
   {
     alert("All Fields are Mendotary")
   }
@@ -34,10 +34,10 @@ function handleSubmit(e){
             onChange={handleData}></input>
         </div>
         <div>
-            <input type='text' placeholder='Enter your Email' name='emai' value={inputData.email}  onChange={handleData}></input>
+            <input type='text' placeholder='Enter your Email' name='email' value={inputData.email}  onChange={handleData}></input>
         </div>
         <div>
-            <input type='text' placeholder='Enter your Password' name='password' value={inputData.password} onChange={handleData}></input>
+            <input type='password' placeholder='Enter your Password' name='password' value={inputData.password} onChange={handleData}></input>
         </div>
         <div>
             <button type='submit'>Submit</button>
