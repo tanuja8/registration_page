@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes, } from 'react-router-dom';
-import From from './Component/From';
-import Test from './Component/Test'
+import Login from './Component/Login';
+import Logout from './Component/Logout';
+// import From from './Component/From';
+
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
   //     <Route path='/about' element={<div><h1>I AM ABOUT PAGE</h1></div>}/>
   //    </Routes>
  <>
-  <From></From>
-  {/* <Test></Test> */}
+{/* //   <From></From> */}
+<Login></Login>
+<Logout></Logout>
+  
   </>
   );
 }

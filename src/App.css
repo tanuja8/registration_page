@@ -29,3 +29,65 @@
     margin: 10px;
     color: blue;
 }
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+}
+.login_form > h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    letter-spacing: -1px;
+}
+.login_form > input{
+    min-width: 380px;
+    padding: 10px 0;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid  black;
+    font-family: "inter";
+    border-radius: 2px;
+    font-size: 15px;
+    
+}
+.submit_btn{
+    padding: 15px 30px;
+    margin-top: 10px;
+    background: black;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-family: "inter";
+    border-radius: 3px;
+}
+/* ****logout page designed***** */
+.logout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;   
+}
+.logout_btn{
+    padding: 15px 30px;
+    margin-top: 10px;
+    background: black;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-family: "inter";
+    border-radius: 3px;   
+}
+.user_name{
+    color: purple;
+}
